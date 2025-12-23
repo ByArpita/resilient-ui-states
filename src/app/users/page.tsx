@@ -38,7 +38,7 @@ export default function UsersPage() {
       // then auto-advance to the next state (no API hit).
       if (state === 'loading') {
         setLoading(true)
-        await new Promise((r) => setTimeout(r, 600))
+        await new Promise((r) => setTimeout(r, 2000))
         if (!cancelled) {
           setLoading(false)
           setState('success')
